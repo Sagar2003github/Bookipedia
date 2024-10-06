@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+
+body {
+  position: relative; 
+  background: #0f0f10; /* Default background for dark theme */
+  color: #fff; /* Default text color for dark theme */
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+ 
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Position from the top */
+  left: 10px; /* Position from the left */
+  width: 100%; /* Cover full width */
+  height: 100%; /* Cover full height */
+  background: radial-gradient(circle at bottom right, rgb(255, 42, 0) -70%, #0f0f10 50%);
+  z-index: -5; /* Send it behind the content */
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position from the bottom */
+  left: 10px; /* Position from the left */
+  width: 100%; /* Cover full width */
+  height: 100%; /* Cover full height */
+  background: radial-gradient(circle at bottom left, rgb(103, 201, 175) 70%, #0f0f10 50%);
+  z-index: -5; /* Send it behind the content */
+}
+
+input,
+textarea {
+  color: #000; /* Input text color */
+}
