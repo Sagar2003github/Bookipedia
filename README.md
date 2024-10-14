@@ -36,7 +36,7 @@ Database: MongoDB stores property listings, user profiles, agent information, an
 
 Authentication: JWT (JSON Web Tokens) is used for secure user authentication, ensuring privacy and security for all user interactions and data.
 
-# Use Caese:
+# Use Cases
 
 User Registration and Login
 
