@@ -13,7 +13,7 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 
 dotenv.config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 connectDB();
 
@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 // CORS configuration
 const corsOptions = {
-    origin: "http://localhost:5000",
+    origin: "https://bookipedia-90oi.onrender.com/",
     credentials: true,
 };
 app.use(cors(corsOptions));
